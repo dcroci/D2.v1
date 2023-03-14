@@ -3,7 +3,7 @@
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-image: url(assets/images.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.133), rgba(0, 0, 0, 0.774)), url(assets/bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -27,6 +27,7 @@ body{
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.108);
     border: 2px solid black;
+    border-radius: 5px;
 }
 .fullGame:hover{
     transform: scale(1.03);
@@ -53,4 +54,10 @@ body{
 }
 body img{
     height: 100px;
+}
+.footerInfo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
