@@ -6,9 +6,7 @@ body{
     background-image: url(assets/images.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-}
-body img{
-    opacity: 0;
+    background-attachment: fixed;
 }
 .game_container{
     display: flex;
@@ -21,16 +19,26 @@ body img{
     justify-content: center;
     align-items: center;
 }
+.fullGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.108);
+    border: 2px solid black;
+}
+.fullGame:hover{
+    transform: scale(1.03);
+}
 .game{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     justify-content: center;
     align-items: center;
     padding: 12px 0;
     width: 400px;
-    margin: 0 auto;
-    background-color: white;
+
 }
 .socials{
     display: flex;
@@ -39,7 +47,10 @@ body img{
 }
 .icon{
     font-size: 64px;
-    color: white;
+    color: rgba(0, 0, 0, 0.562);
     display: flex;
     padding: 12px;
+}
+body img{
+    height: 100px;
 }
