@@ -115,7 +115,7 @@ body img{
 }
 .engram{
     padding: 12px 0 12px 12px;
-    height: 80px;
+    height: 70px;
 }
 
 
@@ -131,12 +131,14 @@ body img{
     width: 400px;
     height: 400px;
     margin: 0 auto;
+    position: relative;
 }
 .desc{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 0px 24px;
+    margin: 0 auto;
+    padding-top: 98px;
 }
 .guess{
     max-width: 400px;
@@ -152,6 +154,8 @@ body img{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    position: absolute;
+    bottom: 0;
 }
 .hints p{
     font-size: 12px;
@@ -173,14 +177,17 @@ body img{
 }
 .questionImg{
     width: 100%;
-    height: 100%;
+    height: 85%;
 }
 .label{
-    margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 300px;
 }
 .hint1, .hint2, .hint3{
     display: flex;
+}
+.who{
+    height: 180px;
 }
