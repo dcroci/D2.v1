@@ -226,3 +226,7 @@ body img{
   cursor: pointer;
   color: transparent;
 }
+form{
+    display: flex;
+    width: 100%;
+}
