@@ -5,8 +5,8 @@
 body{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.133), rgba(0, 0, 0, 0.932)), url(assets/bg.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
     background-attachment: fixed;
+    background-size: 100vw auto;
 }
 @media(max-width:768px){
     body{
@@ -56,6 +56,7 @@ a{
     align-items: center;
     font-size: 42px;
     font-weight: bold;
+    margin: 0 auto;
 }
 .fullGame{
     display: flex;
@@ -162,4 +163,10 @@ body img{
 .questionImg{
     width: 100%;
     height: 100%;
+}
+.label{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
