@@ -8,6 +8,11 @@ body{
     background-size: 100%;
     background-attachment: fixed;
 }
+@media(max-width:768px){
+    body{
+        height: 100vh;
+    }
+}
 a{
     text-decoration: none;
 }
@@ -26,6 +31,12 @@ a{
 .container{
     display: flex;
     flex-direction: column;
+}
+.menuHead{
+    padding-top: 16px;
+}
+.menuDesc{
+    padding-bottom: 16px;
 }
 .game_container{
     display: flex;
@@ -95,7 +106,7 @@ body img{
     font-size: 12px;
 }
 .engram{
-    padding: 12px;
+    padding: 12px 0 12px 12px;
     height: 80px;
 }
 
@@ -105,18 +116,19 @@ body img{
 
 
 .question{
-    background-color: white;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 600px;
+    height: 400px;
     margin: 0 auto;
 }
 .desc{
-    width: 400px;
     align-items: center;
     display: flex;
+    justify-content: center;
+    margin: 0px 24px;
 }
 .guess{
     max-width: 400px;
@@ -125,10 +137,29 @@ body img{
     justify-content: center;
     margin: 0 auto;
 }
+#guess{
+    width: 100%;
+}
 .hints{
     display: flex;
+    width: 100%;
 }
 .hint{
     color:red;
-    font-size: 48px;
+    font-size: 28px;
+    border: 2px solid black;
+    border-radius: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 12px;
+}
+.field{
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+}
+.questionImg{
+    width: 100%;
+    height: 100%;
 }
