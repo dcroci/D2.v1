@@ -17,12 +17,10 @@
     <div class="container">
         <a href="index.html"><img src="assets/rahool.webp" class="title" alt="rahool"></a>
         <div class="question goldBG">
-            <h2 class="label">
-                WOLFPACK ROUNDS
-            </h2>
-            <p class="desc">
-                Rounds fired split into tracking cluster missiles upon detonation
-            </p>
+            <p class="label">GUESS THE NAME OF THIS EXOTIC:</p>
+            <p id="description" class="desc"></p>
+            <p id="result"></p>
+
             <div class="hints">
                 <div class="hint1">
                     <img src="assets/rare.png" alt="" class="hint">
@@ -43,10 +41,8 @@
             </div>
         </div>
         <div class="field">
-            <form action="">
-                <input type="text" name="guess" id="guess" placeholder="Guess an Exotic...">
-                <input type="submit" value="Submit" id="submit">
-            </form>
+            <input type="text" id="guess" name="guess">
+            <button id="submit" onclick="checkGuess()">Submit</button>
         </div>
     </div>
     <footer>
