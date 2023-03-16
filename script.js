@@ -1,3 +1,4 @@
+//hints
 const hint1 = document.querySelector('.hint1');
 const popup = document.querySelector('#popup');
 const closeBtn = document.querySelector('#close-btn');
@@ -10,7 +11,7 @@ closeBtn.addEventListener('click', function() {
     popup.style.display = 'none';
 });
 
-
+//list of all exotics
 const destinyExotics = [
   {
     name: "Leviathan's Breath",
@@ -159,7 +160,7 @@ const destinyExotics = [
     ];
   
 
-  
+//guessing game
 const randomIndex = Math.floor(Math.random() * destinyExotics.length);
 const randomExotic = destinyExotics[randomIndex];
 console.log(randomExotic)
