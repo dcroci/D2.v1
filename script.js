@@ -1,16 +1,3 @@
-//hints
-const hint1 = document.querySelector('.hint1');
-const popup = document.querySelector('#popup');
-const closeBtn = document.querySelector('#close-btn');
-
-hint1.addEventListener('click', function() {
-    popup.style.display = 'block';
-});
-
-closeBtn.addEventListener('click', function() {
-    popup.style.display = 'none';
-});
-
 //list of all exotics
 const destinyExotics = [
   {
@@ -179,5 +166,33 @@ function checkGuess() {
     resultEl.textContent = 'Incorrect. Try again.';
   }
 }
+//hints
+const hint1 = document.querySelector('.hint1');
+const hint2 = document.querySelector('.hint2');
+const popup = document.querySelector('#popup');
+const popup2 = document.querySelector('#popup2');
+const closeBtn = document.querySelector('#close-btn');
+const closeBtn2 = document.querySelector('#close-btn2');
 
+hint1.addEventListener('click', function() {
+    popup.style.display = 'block';
+});
+
+hint2.addEventListener('click', function() {
+    popup2.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+});
+closeBtn2.addEventListener('click', function() {
+    popup2.style.display = 'none';
+});
+
+
+const hint1El = document.getElementById('hint1');
+hint1El.textContent = randomExotic.slot;
+
+const hint2El = document.getElementById('hint2');
+hint2El.textContent = randomExotic.type;
   
