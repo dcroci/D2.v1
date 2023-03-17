@@ -150,15 +150,19 @@ const destinyExotics = [
 //guessing game
 const randomIndex = Math.floor(Math.random() * destinyExotics.length);
 const randomExotic = destinyExotics[randomIndex];
-console.log(randomExotic)
+console.log(randomExotic.name)
 
 const descriptionEl = document.getElementById('description');
 descriptionEl.textContent = randomExotic.description;
-
+let guessCount = 0;
+function raiseCount(){
+    guessCount ++;
+    console.log(guessCount)
+}
 function checkGuess() {
   const guess = document.getElementById('guess').value;
   const resultEl = document.getElementById('result');
-  if (guess === '') {
+  if (guess === '' || guess === ' ') {
     alert('Please enter a guess.');
   } else if (guess.toLowerCase() === randomExotic.name.toLowerCase()) {
     resultEl.textContent = 'Correct!';
@@ -166,27 +170,26 @@ function checkGuess() {
     resultEl.textContent = 'Incorrect. Try again.';
   }
 }
+function guessing(){
+    raiseCount();
+    checkGuess();
+}
 //hints
 const hint1 = document.querySelector('.hint1');
 const hint2 = document.querySelector('.hint2');
+const hint3 = document.querySelector('.hint3');
 const popup = document.querySelector('#popup');
 const popup2 = document.querySelector('#popup2');
-const closeBtn = document.querySelector('#close-btn');
-const closeBtn2 = document.querySelector('#close-btn2');
+const popup3 = document.querySelector('#popup3');
 
 hint1.addEventListener('click', function() {
-    popup.style.display = 'block';
+popup.style.display = 'block';
 });
-
 hint2.addEventListener('click', function() {
     popup2.style.display = 'block';
 });
-
-closeBtn.addEventListener('click', function() {
-    popup.style.display = 'none';
-});
-closeBtn2.addEventListener('click', function() {
-    popup2.style.display = 'none';
+hint3.addEventListener('click', function() {
+    popup3.style.display = 'block';
 });
 
 
@@ -195,4 +198,7 @@ hint1El.textContent = randomExotic.slot;
 
 const hint2El = document.getElementById('hint2');
 hint2El.textContent = randomExotic.type;
+
+const hint3El = document.getElementById('hint3');
+hint3El.textContent = randomExotic.name;
   

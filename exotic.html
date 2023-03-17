@@ -25,32 +25,31 @@
                 <div class="hint1">
                     <img src="assets/rare.png" alt="" class="hint">
                     <p>Rare Hint</p>
-                </div>
-                <div id="popup">
-                    <p id="hint1"></p>
-                    <button id="close-btn"><i class="fa-solid fa-xmark">d</i></button>
-                </div>                
+                </div>               
                 <div class="hint2">
                     <img src="assets/legendary.png" alt="" class="hint">
                     <p>Legendary Hint</p>
-                </div>
-                <div id="popup2">
-                    <p id="hint2"></p>
-                    <button id="close-btn2"><i class="fa-solid fa-xmark">h</i></button>
-                </div>   
+                </div> 
                 <div class="hint3">
                     <img src="assets/engrams.png" alt="" class="hint">
                     <p>Exotic Hint</p>
                 </div>
-                <div id="popup">
-                    <p id="hint1"></p>
-                    <button id="close-btn"><i class="fa-solid fa-xmark">d</i></button>
-                </div>   
             </div>
         </div>
         <div class="field">
             <input type="text" id="guess" name="guess">
-            <button id="submit" onclick="checkGuess()">Submit</button>
+            <button id="submit" onclick="guessing()"></button>
+        </div>
+        <div class="popups">
+            <div id="popup">
+                <p id="hint1"></p>
+            </div> 
+            <div id="popup2">
+                <p id="hint2"></p>
+            </div>   
+            <div id="popup3">
+                <p id="hint3"></p>
+            </div>  
         </div>
     </div>
     <footer>

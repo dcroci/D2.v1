@@ -140,7 +140,9 @@ body img{
     justify-content: center;
     margin: 0 auto;
     padding: 26px 26px 26px 26px;
-    color: red;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
 }
 .guess{
     max-width: 400px;
@@ -175,6 +177,7 @@ body img{
     margin: 0 auto;
     padding: 12px;
     height: 36px;
+    cursor: pointer;
 }
 .field{
     display: flex;
@@ -197,30 +200,53 @@ body img{
 .who{
     height: 180px;
 }
+.popups{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2cd00;
+    width: 400px;
+    margin: 0 auto;
+}
 #popup{
-    position: fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-40%, -50%);
-    padding: 10px;
-    width: 300px;
-    height: 200px;
     z-index: 9999;
     display: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 0px 100px;
+    border-bottom: 2px solid black;
 }
 #popup2{
-    position: fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-40%, -50%);
-    padding: 10px;
-    width: 300px;
-    height: 200px;
     z-index: 9999;
     display: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 0px 100px;
+    border-bottom: 2px solid black;
 }
-#popup p{
+#popup3{
+    z-index: 9999;
+    display: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 0px 100px;
+}
+.row{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#popup p, #popup2 p,#popup3 p{
     font-size: 24px;
+    display: flex;
+    width: 400px;
 }
 #popup img{
     width: 80%;
@@ -237,6 +263,12 @@ body img{
     cursor: pointer;
 }
 #close-btn2{
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
+#close-btn3{
     border: none;
     background-color: transparent;
     font-size: 24px;
