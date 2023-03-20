@@ -1,8 +1,8 @@
-
 * {
     font-family: 'Nunito', sans-serif;
 }
-html{
+
+html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.133), rgba(0, 0, 0, 0.932)), url(assets/bg.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,49 +11,62 @@ html{
     height: 100%;
     overflow: hidden;
 }
-@media(max-width:768px){
-    body{
+
+@media(max-width:768px) {
+    body {
         height: 100vh;
     }
 }
-a{
+
+a {
     text-decoration: none;
 }
-.goldBG{
-    background-color: rgb(242, 205, 0)
+
+.goldBG {
+    background-color: rgb(235, 204, 26)
 }
-.purpleBG{
-    background-color: rgb(153, 19, 215);
+
+.purpleBG {
+    background-color: rgb(171, 70, 218);
 }
-.blueBG{
+
+.blueBG {
     background-color: rgb(0, 191, 255);
 }
-.whiteBG{
+
+.whiteBG {
     background-color: white;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
 }
-.menuHead{
+
+.menuHead {
     padding-top: 16px;
 }
-.menuDesc{
+
+.menuDesc {
     padding-bottom: 16px;
 }
-.game_container{
+
+.game_container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 2rem;
 }
-.game_container h2{
+
+.game_container h2 {
     font-size: 24px;
 }
-.game_container p{
+
+.game_container p {
     font-size: 18px;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +74,8 @@ a{
     font-weight: bold;
     margin: 0 auto;
 }
-.fullGame{
+
+.fullGame {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,17 +85,21 @@ a{
     border-radius: 5px;
     height: 100px;
 }
-a:hover{
+
+a:hover {
     transform: scale(1.03);
 }
-a:visited{
+
+a:visited {
     color: black;
 }
-a:active{
+
+a:active {
     color: black;
     text-decoration: none;
 }
-.game{
+
+.game {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,12 +108,14 @@ a:active{
     width: 230px;
 
 }
-.socials{
+
+.socials {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.icon{
+
+.icon {
     font-size: 64px;
     color: rgb(255, 255, 255);
     display: flex;
@@ -103,17 +123,20 @@ a:active{
     align-items: center;
     padding: 24px;
 }
-body img{
+
+body img {
     height: 100px;
 }
-.footerInfo{
+
+.footerInfo {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
 }
-.engram{
+
+.engram {
     padding: 12px 0 12px 12px;
     height: 70px;
 }
@@ -123,8 +146,8 @@ body img{
 
 
 
-.question{
-    
+.question {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +157,8 @@ body img{
     position: relative;
     font-size: 20px;
 }
-.desc{
+
+.desc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,33 +168,39 @@ body img{
     font-weight: bold;
     font-size: 24px;
 }
-.guess{
+
+.guess {
     max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
-#guess{
+
+#guess {
     width: 100%;
     border: none;
 }
-#guess:focus{
+
+#guess:focus {
     outline: none;
 }
-.hints{
+
+.hints {
     display: flex;
     width: 100%;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
 }
-.hints p{
+
+.hints p {
     font-size: 12px;
     word-spacing: 100vw;
     margin: auto;
 }
-.hint{
+
+.hint {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,35 +209,52 @@ body img{
     height: 36px;
     cursor: pointer;
 }
-.field{
+
+.field {
     display: flex;
     margin: 0 auto;
     width: 400px;
 }
-.questionImg{
+
+.questionImg {
     width: 100%;
     height: 85%;
 }
-.label{
+
+.label {
     align-items: center;
     display: flex;
     justify-content: center;
     width: 400px;
 }
-.hint1, .hint2, .hint3{
+
+.hint1,
+.hint2,
+.hint3 {
     display: flex;
 }
-.who{
+
+.who {
     height: 180px;
 }
-.popups{
+
+.popups {
     display: flex;
     flex-direction: column;
     background-color: #f2cd00;
     width: 400px;
     margin: 0 auto;
 }
-#popup{
+
+.quotePopups {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(171, 70, 218);
+    width: 400px;
+    margin: 0 auto;
+}
+
+#popup {
     z-index: 9999;
     display: none;
     margin: 0 auto;
@@ -217,7 +264,8 @@ body img{
     padding: 0px 100px;
     border-bottom: 2px solid black;
 }
-#popup2{
+
+#popup2 {
     z-index: 9999;
     display: none;
     margin: 0 auto;
@@ -227,7 +275,8 @@ body img{
     padding: 0px 100px;
     border-bottom: 2px solid black;
 }
-#popup3{
+
+#popup3 {
     z-index: 9999;
     display: none;
     margin: 0 auto;
@@ -236,19 +285,24 @@ body img{
     width: 400px;
     padding: 0px 100px;
 }
-.row{
+
+.row {
     display: flex;
     background-color: white;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
-#popup p, #popup2 p,#popup3 p{
+
+#popup p,
+#popup2 p,
+#popup3 p {
     font-size: 24px;
     display: flex;
     width: 400px;
 }
-#popup img{
+
+#popup img {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -256,36 +310,42 @@ body img{
     border-radius: 50%;
 
 }
-#close-btn{
+
+#close-btn {
     border: none;
     background-color: transparent;
     font-size: 24px;
     cursor: pointer;
 }
-#close-btn2{
+
+#close-btn2 {
     border: none;
     background-color: transparent;
     font-size: 24px;
     cursor: pointer;
 }
-#close-btn3{
+
+#close-btn3 {
     border: none;
     background-color: transparent;
     font-size: 24px;
     cursor: pointer;
 }
-#submit{
+
+#submit {
     background-image: url(assets/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  color: transparent;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    color: transparent;
 }
-form{
+
+form {
     display: flex;
     width: 100%;
 }

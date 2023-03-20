@@ -34,7 +34,7 @@ function checkGuess() {
   const resultEl = document.getElementById('result');
   if (guess === '' || guess === ' ') {
     alert('Please enter a guess.');
-  } else if (guess.toLowerCase() === randomQuote.name.toLowerCase()) {
+  } else if (guess.toLowerCase() === randomQuote.person.toLowerCase()) {
     resultEl.textContent = 'Correct!';
   } else {
     resultEl.textContent = 'Incorrect. Try again.';
