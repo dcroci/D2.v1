@@ -17,19 +17,18 @@
     <div class="container">
         <a href="index.html"><img src="assets/rahool.webp" class="title" alt="rahool"></a>
         <div class="question purpleBG">
-            <h2 class="label">
-                “If They Want War, Give Them War.”
-            </h2>
-            <img src="assets/Master_Rahool copy.webp" alt="" class="who">
+            <p id="description" class="desc"></p>
+            <p id="result"></p>
+
             <div class="hints">
                 <div class="hint1">
                     <img src="assets/rare.png" alt="" class="hint">
                     <p>Rare Hint</p>
-                </div>
+                </div>               
                 <div class="hint2">
                     <img src="assets/legendary.png" alt="" class="hint">
                     <p>Legendary Hint</p>
-                </div>
+                </div> 
                 <div class="hint3">
                     <img src="assets/engrams.png" alt="" class="hint">
                     <p>Exotic Hint</p>
@@ -37,8 +36,19 @@
             </div>
         </div>
         <div class="field">
-            <input type="text" name="guess" id="guess" placeholder="Guess who said this...">
-            <input type="submit" value="Submit" id="submit">
+            <input type="text" id="guess" name="guess">
+            <button id="submit" onclick="guessing()"></button>
+        </div>
+        <div class="popups">
+            <div id="popup">
+                <p id="hint1"></p>
+            </div> 
+            <div id="popup2">
+                <p id="hint2"></p>
+            </div>   
+            <div id="popup3">
+                <p id="hint3"></p>
+            </div>  
         </div>
     </div>
     <footer>
@@ -57,6 +67,7 @@
             <p>Copyright &copy; Dominik Croci | <a href="mailto:dominikrcroci@gmail.com">Contact</a></p>
         </div>
     </footer>
+    <script src="quote.js"></script>
 </body>
 
 </html>

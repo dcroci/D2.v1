@@ -146,7 +146,6 @@ const destinyExotics = [
   }
     ];
   
-
 //guessing game
 const randomIndex = Math.floor(Math.random() * destinyExotics.length);
 const randomExotic = destinyExotics[randomIndex];
