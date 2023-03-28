@@ -88,6 +88,7 @@ a {
 
 a:hover {
     transform: scale(1.03);
+    transition: 0.5s;
 }
 
 a:visited {
