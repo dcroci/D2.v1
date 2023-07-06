@@ -196,6 +196,14 @@ body img {
   height: 36px;
   cursor: pointer;
 }
+#result {
+  z-index: 9999;
+  position: absolute;
+  top: 5%;
+
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 .field {
   display: flex;
