@@ -224,6 +224,7 @@ body img {
 .questionImg {
   width: 100%;
   height: 85%;
+  transform: scale(10);
 }
 
 .label {
