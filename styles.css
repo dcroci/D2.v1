@@ -1,5 +1,6 @@
 * {
   font-family: 'Nunito', sans-serif;
+  transition: all 0.5s;
 }
 
 html {
@@ -25,6 +26,7 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .goldBG {
@@ -220,6 +222,7 @@ body img {
   position: relative;
   font-size: 20px;
   overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 76, 255, 0.5);
 }
 .questionImg {
   width: 100%;
@@ -238,6 +241,13 @@ body img {
 .hint2,
 .hint3 {
   display: flex;
+  font-weight: bold;
+  background-color: rgba(157, 157, 160, 0.489);
+}
+.hint1 p,
+.hint2 p,
+.hint3 p {
+  font-size: 1rem;
 }
 
 .who {
@@ -353,4 +363,35 @@ body img {
 form {
   display: flex;
   width: 100%;
+}
+@media (max-width: 416px) {
+  .question {
+    width: 100%;
+  }
+  .hints {
+    width: 150px;
+    flex-wrap: wrap;
+    left: 0;
+  }
+  .hint1,
+  .hint2 .hint3 {
+    display: inline-flex;
+    width: fit-content;
+  }
+  .field {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+  }
+  .socials {
+    width: 100%;
+  }
+  .icon {
+    font-size: 50px;
+  }
+  .fullGame {
+    width: 70%;
+  }
 }
